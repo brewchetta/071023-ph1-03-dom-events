@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
@@ -12,13 +12,13 @@
 
       <div class="window-bar">
         <span>🚶 Instant Messenger</span>
-        <button class="exit-button">X</button>
+        <button class="exit-button" onclick="handleClickButton()">X</button>
       </div>
 
       <p class="file-options">
-        <span>File</span>
+        <span id="file">File</span>
         <span>Profile</span>
-        <span>Help</span>
+        <span id="help">Help</span>
       </p>
 
       <div class="messages">
