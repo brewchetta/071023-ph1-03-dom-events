@@ -57,7 +57,20 @@ messageForm.addEventListener("submit", (event) => {
 
   const messages = document.querySelector(".messages")
   messages.append(myFancyNewParagraphTag)
+
+  myFancyNewParagraphTag.addEventListener("click", () => myFancyNewParagraphTag.remove())
+
+  event.target.reset()
 })
+
+// EVENT DELEGATION
+// messages.addEventListener("click", (event) => {
+//   const tagName = event.target.tagName
+//   if (tagName === "P") {
+//     event.target.remove()
+//   }
+// })
+
 
 // here is an alternate way of attaching event listeners 
 // exitButton.onclick = () => messageWindow.remove()
